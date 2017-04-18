@@ -1,0 +1,11 @@
+c:\users\dell\documents\visual studio 2015\Projects\Battleship\Battleship\obj\Debug\Battleship.csprojResolveAssemblyReference.cache
+c:\users\dell\documents\visual studio 2015\Projects\Battleship\Battleship\bin\Debug\Battleship.exe.config
+c:\users\dell\documents\visual studio 2015\Projects\Battleship\Battleship\bin\Debug\Battleship.exe
+c:\users\dell\documents\visual studio 2015\Projects\Battleship\Battleship\bin\Debug\Battleship.pdb
+c:\users\dell\documents\visual studio 2015\Projects\Battleship\Battleship\obj\Debug\Battleship.exe
+c:\users\dell\documents\visual studio 2015\Projects\Battleship\Battleship\obj\Debug\Battleship.pdb
+E:\NCHS\2ND YEAR\SEM_1\DT&P\Tutorials\w05\Xamarin\BattleshipCsharp\Battleship\bin\Debug\Battleship.exe.config
+E:\NCHS\2ND YEAR\SEM_1\DT&P\Tutorials\w05\Xamarin\BattleshipCsharp\Battleship\bin\Debug\Battleship.exe
+E:\NCHS\2ND YEAR\SEM_1\DT&P\Tutorials\w05\Xamarin\BattleshipCsharp\Battleship\bin\Debug\Battleship.pdb
+E:\NCHS\2ND YEAR\SEM_1\DT&P\Tutorials\w05\Xamarin\BattleshipCsharp\Battleship\obj\Debug\Battleship.exe
+E:\NCHS\2ND YEAR\SEM_1\DT&P\Tutorials\w05\Xamarin\BattleshipCsharp\Battleship\obj\Debug\Battleship.pdb
