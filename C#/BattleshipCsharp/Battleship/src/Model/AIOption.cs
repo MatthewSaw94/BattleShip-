@@ -1,8 +1,7 @@
-/// <summary>
-/// The AIMediumPlayer is a type of AIPlayer where it will try and destroy a ship
-/// if it has found a ship
-/// </summary>
-/// 
+
+/*<summary>
+ * The different AI levels.
+ * </summary> */ 
 
 namespace Battleship
 {

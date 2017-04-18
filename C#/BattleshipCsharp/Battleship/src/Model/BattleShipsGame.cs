@@ -1,15 +1,11 @@
-
-using Microsoft.VisualBasic;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-//using System.Data;
-using System.Diagnostics;
 
-/// <summary>
-/// The AIPlayer is a type of player. It can readomly deploy ships, it also has the
-/// functionality to generate coordinates and shoot at tiles
-/// </summary>
+/* <summary>
+ * The BattleShipsGame controls a big part of the game. It will add the two players
+ * to the game and make sure that both players ships are all deployed before starting the game.
+ * It also allows players to shoot and swap turns between player. It will also check if players 
+ * are destroyed.
+ * </summary> */
 
 namespace Battleship
 {

@@ -1,14 +1,15 @@
 
-using Microsoft.VisualBasic;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-//using System.Data;
-using System.Diagnostics;
 
-/// <summary>
-/// The result of an attack.
-/// </summary>
+/*<summary>
+ * The SeaGrid is the grid upon which the ships are deployed.
+ * </summary>
+ * <remarks>
+ * The grid is viewable via the ISeaGrid interface as a read only
+ * grid. This can be used in conjuncture with the SeaGridAdapter to 
+ * mask the position of the ships.
+ * </remarks> */
 
 namespace Battleship
 {
