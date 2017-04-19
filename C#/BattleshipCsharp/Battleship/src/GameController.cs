@@ -2,10 +2,10 @@ using SwinGameSDK;
 using System;
 using System.Collections.Generic;
 
-/// <summary>
-/// The EndingGameController is responsible for managing the interactions at the end
-/// of a game.
-/// </summary>
+/* <summary>
+ * The GameController is responsible for controlling the game,
+ * managing user input, and displaying the current state of the game.
+ * </summary> */
 
 namespace Battleship
 {

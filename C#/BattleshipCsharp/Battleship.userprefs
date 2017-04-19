@@ -4,18 +4,18 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Battleship\src\DeploymentController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Battleship\src\UtilityFunctions.cs">
     <Files>
-      <File FileName="Battleship\src\DeploymentController.cs" Line="17" Column="33" />
-      <File FileName="Battleship\src\DiscoveryController.cs" Line="1" Column="1" />
-      <File FileName="Battleship\src\EndingGameController.cs" Line="1" Column="1" />
-      <File FileName="Battleship\src\GameController.cs" Line="1" Column="1" />
-      <File FileName="Battleship\src\GameLogic.cs" Line="1" Column="1" />
-      <File FileName="Battleship\src\GameResources.cs" Line="1" Column="1" />
-      <File FileName="Battleship\src\GameState.cs" Line="1" Column="1" />
-      <File FileName="Battleship\src\HighScoreController.cs" Line="1" Column="1" />
-      <File FileName="Battleship\src\MenuController.cs" Line="1" Column="1" />
-      <File FileName="Battleship\src\UtilityFunctions.cs" Line="2" Column="14" />
+      <File FileName="Battleship\src\DeploymentController.cs" Line="1" Column="1" />
+      <File FileName="Battleship\src\DiscoveryController.cs" Line="6" Column="4" />
+      <File FileName="Battleship\src\EndingGameController.cs" Line="7" Column="1" />
+      <File FileName="Battleship\src\GameController.cs" Line="8" Column="11" />
+      <File FileName="Battleship\src\GameLogic.cs" Line="1" Column="19" />
+      <File FileName="Battleship\src\GameResources.cs" Line="5" Column="1" />
+      <File FileName="Battleship\src\GameState.cs" Line="6" Column="4" />
+      <File FileName="Battleship\src\HighScoreController.cs" Line="13" Column="4" />
+      <File FileName="Battleship\src\MenuController.cs" Line="8" Column="4" />
+      <File FileName="Battleship\src\UtilityFunctions.cs" Line="247" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />

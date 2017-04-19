@@ -1,17 +1,14 @@
-using Microsoft.VisualBasic;
+
 using System;
-using System.Collections;
-using System.Collections.Generic;
-//using System.Data;
-using System.Diagnostics;
 using SwinGameSDK;
 
 namespace Battleship
 {
-	/// <summary>
-	/// The DeploymentController controls the players actions
-	/// during the deployment phase.
-	/// </summary>
+	/* <summary>
+	 * The DeploymentController controls the players actions
+	 * during the deployment phase.
+	 * </summary> */
+
 	static class DeploymentController
 	{
 		private const int SHIPS_TOP = 98;

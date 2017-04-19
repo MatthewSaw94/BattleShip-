@@ -1,14 +1,9 @@
-using Microsoft.VisualBasic;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-//using System.Data;
-using System.Diagnostics;
 using SwinGameSDK;
 
-/// <summary>
-/// The battle phase is handled by the DiscoveryController.
-/// </summary>
+/*<summary>
+ * The EndingGameController is responsible for managing the interactions at the end
+ * of a game.
+ * </summary> */
 
 namespace Battleship
 {

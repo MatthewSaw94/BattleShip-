@@ -1,16 +1,10 @@
-using Microsoft.VisualBasic;
-using System;
-using System.Collections;
 using System.Collections.Generic;
-//using System.Data;
-using System.Diagnostics;
 using SwinGameSDK;
 
-/// <summary>
-/// The menu controller handles the drawing and user interactions
-/// from the menus in the game. These include the main menu, game
-/// menu and the settings m,enu.
-/// </summary>
+/* <summary>
+ * This includes a number of utility methods for
+ * drawing and interacting with the Mouse.
+ * </summary> */
 
 namespace Battleship
 {
