@@ -86,6 +86,7 @@ namespace Battleship
             _theGame = new BattleShipsGame();
 
             //create the players
+			//Change to switch case
             if (_aiSetting == AIOption.Medium)
             {
                 _ai = new AIMediumPlayer(_theGame);
