@@ -53,11 +53,11 @@ namespace Battleship
 				GameController.AddNewState(GameState.ViewingGameMenu);
 			}
 
-			if (SwinGame.KeyTyped(KeyCode.vk_UP) | SwinGame.KeyTyped(KeyCode.vk_DOWN))
+			if (SwinGame.KeyTyped(KeyCode.vk_UP) || SwinGame.KeyTyped(KeyCode.vk_DOWN))
 			{
 				_currentDirection = Direction.UpDown;
 			}
-			if (SwinGame.KeyTyped(KeyCode.vk_LEFT) | SwinGame.KeyTyped(KeyCode.vk_RIGHT))
+			if (SwinGame.KeyTyped(KeyCode.vk_LEFT) || SwinGame.KeyTyped(KeyCode.vk_RIGHT))
 			{
 				_currentDirection = Direction.LeftRight;
 			}
@@ -86,7 +86,7 @@ namespace Battleship
 				}
 				else if (UtilityFunctions.IsMouseInRectangle(UP_DOWN_BUTTON_LEFT, TOP_BUTTONS_TOP, DIR_BUTTONS_WIDTH, TOP_BUTTONS_HEIGHT))
 				{
-					_currentDirection = Direction.LeftRight;
+					_currentDirection = Direction.UpDown;
 				}
 				else if (UtilityFunctions.IsMouseInRectangle(LEFT_RIGHT_BUTTON_LEFT, TOP_BUTTONS_TOP, DIR_BUTTONS_WIDTH, TOP_BUTTONS_HEIGHT))
 				{
@@ -116,7 +116,7 @@ namespace Battleship
 			//Calculate the row/col clicked
 			int row = 0;
 			int col = 0;
-			row = Convert.ToInt32(Math.Floor((mouse.Y) / (UtilityFunctions.CELL_HEIGHT + UtilityFunctions.CELL_GAP)));
+			row = Convert.ToInt32(Math.Floor((mouse.Y - 130) / (UtilityFunctions.CELL_HEIGHT + UtilityFunctions.CELL_GAP)));
 			col = Convert.ToInt32(Math.Floor((mouse.X - UtilityFunctions.FIELD_LEFT) / (UtilityFunctions.CELL_WIDTH + UtilityFunctions.CELL_GAP)));
 
 			if (row >= 0 & row < GameController.HumanPlayer.PlayerGrid.Height)
@@ -163,7 +163,8 @@ namespace Battleship
 			foreach (ShipName sn in Enum.GetValues(typeof(ShipName)))
 			{
 				int i = 0;
-				i = ((int)sn) - 1;
+				i = System.Convert.ToInt32(System.Convert.ToInt32(sn) - 1);
+				//i = ((int)sn) - 1;
 				if (i >= 0)
 				{
 					if (sn == _selectedShip)
@@ -201,7 +202,7 @@ namespace Battleship
 			foreach (ShipName sn in Enum.GetValues(typeof(ShipName)))
 			{
 				int i = 0;
-				i = ((int)sn) - 1;
+				i = System.Convert.ToInt32(System.Convert.ToInt32(sn) - 1);
 
 				if (UtilityFunctions.IsMouseInRectangle(SHIPS_LEFT, SHIPS_TOP + i * SHIPS_HEIGHT, SHIPS_WIDTH, SHIPS_HEIGHT))
 				{
