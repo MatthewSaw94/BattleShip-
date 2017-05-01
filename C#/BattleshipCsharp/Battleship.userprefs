@@ -4,27 +4,16 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Battleship\src\Model\AIPlayer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Battleship\src\MenuController.cs">
     <Files>
       <File FileName="Battleship\src\Model\Ship.cs" Line="144" Column="3" />
-      <File FileName="Battleship\src\DeploymentController.cs" Line="17" Column="33" />
+      <File FileName="Battleship\src\DeploymentController.cs" Line="216" Column="2" />
       <File FileName="Battleship\src\Model\AIPlayer.cs" Line="23" Column="19" />
+      <File FileName="Battleship\src\GameResources.cs" Line="18" Column="47" />
+      <File FileName="Battleship\src\DiscoveryController.cs" Line="9" Column="1" />
+      <File FileName="Battleship\src\GameController.cs" Line="12" Column="25" />
+      <File FileName="Battleship\src\MenuController.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Battleship" expanded="True">
-            <Node name="Battleship" expanded="True">
-              <Node name="src" expanded="True">
-                <Node name="Model" expanded="True">
-                  <Node name="AIPlayer.cs" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Battleship PreferredExecutionTarget="MonoDevelop.Default" />

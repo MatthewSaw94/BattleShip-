@@ -9,3 +9,17 @@ E:\NCHS\2ND YEAR\SEM_1\DT&P\Tutorials\w05\Xamarin\BattleshipCsharp\Battleship\bi
 E:\NCHS\2ND YEAR\SEM_1\DT&P\Tutorials\w05\Xamarin\BattleshipCsharp\Battleship\bin\Debug\Battleship.pdb
 E:\NCHS\2ND YEAR\SEM_1\DT&P\Tutorials\w05\Xamarin\BattleshipCsharp\Battleship\obj\Debug\Battleship.exe
 E:\NCHS\2ND YEAR\SEM_1\DT&P\Tutorials\w05\Xamarin\BattleshipCsharp\Battleship\obj\Debug\Battleship.pdb
+C:\Users\pavilion\Desktop\Dev_Tools\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\Battleship.exe.config
+C:\Users\pavilion\Desktop\Dev_Tools\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\Battleship.exe
+C:\Users\pavilion\Desktop\Dev_Tools\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\Battleship.pdb
+C:\Users\pavilion\Desktop\Dev_Tools\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\mscorlib.dll
+C:\Users\pavilion\Desktop\Dev_Tools\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\System.Net.Http.dll
+C:\Users\pavilion\Desktop\Dev_Tools\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\System.Net.Http.xml
+C:\Users\pavilion\Desktop\Dev_Tools\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\normidna.nlp
+C:\Users\pavilion\Desktop\Dev_Tools\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\normnfc.nlp
+C:\Users\pavilion\Desktop\Dev_Tools\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\normnfd.nlp
+C:\Users\pavilion\Desktop\Dev_Tools\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\normnfkc.nlp
+C:\Users\pavilion\Desktop\Dev_Tools\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\normnfkd.nlp
+C:\Users\pavilion\Desktop\Dev_Tools\BattleShip-\C#\BattleshipCsharp\Battleship\obj\Debug\Battleship.csprojResolveAssemblyReference.cache
+C:\Users\pavilion\Desktop\Dev_Tools\BattleShip-\C#\BattleshipCsharp\Battleship\obj\Debug\Battleship.exe
+C:\Users\pavilion\Desktop\Dev_Tools\BattleShip-\C#\BattleshipCsharp\Battleship\obj\Debug\Battleship.pdb
