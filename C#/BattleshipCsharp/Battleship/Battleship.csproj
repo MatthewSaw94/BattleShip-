@@ -45,6 +45,9 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.3.6.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,6 +77,8 @@
     <Compile Include="src\Model\Tile.cs" />
     <Compile Include="src\Model\TileView.cs" />
     <Compile Include="src\UtilityFunctions.cs" />
+    <Compile Include="src\HelpMenu.cs" />
+    <Compile Include="src\Battleship_UnitTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -85,6 +90,10 @@
     <None Include="Resources\fonts\ffaccess.ttf" />
     <None Include="Resources\fonts\maven_pro_regular.ttf" />
     <None Include="Resources\sounds\SwinGameStart.ogg" />
+    <None Include="Resources\images\help_page.jpg">
+      <LogicalName>help_page</LogicalName>
+    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="lib\win\jpeg.dll" />
@@ -111,12 +120,15 @@
     <Content Include="Resources\animations\startup.txt" />
     <Content Include="Resources\bundles\FileDialog.txt" />
     <Content Include="Resources\bundles\splash.txt" />
+    <Content Include="Resources\images\Actions-go-down-icon.png" />
+    <Content Include="Resources\images\Actions-go-next-icon.png" />
+    <Content Include="Resources\images\Actions-go-previous-icon.png" />
+    <Content Include="Resources\images\Actions-go-up-icon.png" />
     <Content Include="Resources\images\deploy.jpg" />
     <Content Include="Resources\images\deploy_button_hl.png" />
-    <Content Include="Resources\images\deploy_dir_button_horiz.png" />
-    <Content Include="Resources\images\deploy_dir_button_vert.png" />
     <Content Include="Resources\images\deploy_play_button.png" />
     <Content Include="Resources\images\deploy_randomize_button.png" />
+    <Content Include="Resources\images\deploy_right_button_horiz.png" />
     <Content Include="Resources\images\discover.jpg" />
     <Content Include="Resources\images\explosion.png" />
     <Content Include="Resources\images\fdFile.png" />
@@ -126,9 +138,11 @@
     <Content Include="Resources\images\FileDialog_Inactive.png" />
     <Content Include="Resources\images\FileDialog_Scroll.png" />
     <Content Include="Resources\images\FileDialog_ScrollSmall.png" />
+    <Content Include="Resources\images\hb_button2.png" />
     <Content Include="Resources\images\loader_empty.png" />
     <Content Include="Resources\images\loader_full.png" />
     <Content Include="Resources\images\main_page.jpg" />
+    <Content Include="Resources\images\Mute_Button.PNG" />
     <Content Include="Resources\images\ship_deploy_horiz_1.png" />
     <Content Include="Resources\images\ship_deploy_horiz_2.png" />
     <Content Include="Resources\images\ship_deploy_horiz_3.png" />
@@ -139,6 +153,7 @@
     <Content Include="Resources\images\ship_deploy_vert_3.png" />
     <Content Include="Resources\images\ship_deploy_vert_4.png" />
     <Content Include="Resources\images\ship_deploy_vert_5.png" />
+    <Content Include="Resources\images\Sound_Button.png" />
     <Content Include="Resources\images\splash.png" />
     <Content Include="Resources\images\SplashBack.png" />
     <Content Include="Resources\images\Swinburne.jpg" />

@@ -1,10 +1,5 @@
-using Microsoft.VisualBasic;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-//using System.Data;
-using System.Diagnostics;
 using SwinGameSDK;
+using System.Collections.Generic;
 
 /// <summary>
 /// The menu controller handles the drawing and user interactions
@@ -14,39 +9,39 @@ using SwinGameSDK;
 
 namespace Battleship
 {
-	static class UtilityFunctions
+	sealed class UtilityFunctions
 	{
 		public const int FIELD_TOP = 122;
 		public const int FIELD_LEFT = 349;
 		public const int FIELD_WIDTH = 418;
-
 		public const int FIELD_HEIGHT = 418;
 
 		public const int MESSAGE_TOP = 548;
+
 		public const int CELL_WIDTH = 40;
 		public const int CELL_HEIGHT = 40;
-
 		public const int CELL_GAP = 2;
 
 		public const int SHIP_GAP = 3;
-		private static readonly Color SMALL_SEA = SwinGame.RGBAColor(6, 60, 94, 255);
-		private static readonly Color SMALL_SHIP = Color.Gray;
-		private static readonly Color SMALL_MISS = SwinGame.RGBAColor(1, 147, 220, 255);
 
-		private static readonly Color SMALL_HIT = SwinGame.RGBAColor(169, 24, 37, 255);
-		private static readonly Color LARGE_SEA = SwinGame.RGBAColor(6, 60, 94, 255);
-		private static readonly Color LARGE_SHIP = Color.Gray;
-		private static readonly Color LARGE_MISS = SwinGame.RGBAColor(1, 147, 220, 255);
+		private readonly static Color SMALL_SEA = SwinGame.RGBAColor(6, 60, 94, 255);
+		private readonly static Color SMALL_SHIP = Color.Gray;
+		private readonly static Color SMALL_MISS = SwinGame.RGBAColor(1, 147, 220, 255);
+		private readonly static Color SMALL_HIT = SwinGame.RGBAColor(169, 24, 37, 255);
 
-		private static readonly Color LARGE_HIT = SwinGame.RGBAColor(252, 2, 3, 255);
-		private static readonly Color OUTLINE_COLOR = SwinGame.RGBAColor(5, 55, 88, 255);
-		private static readonly Color SHIP_FILL_COLOR = Color.Gray;
-		private static readonly Color SHIP_OUTLINE_COLOR = Color.White;
+		private readonly static Color LARGE_SEA = SwinGame.RGBAColor(6, 60, 94, 255);
+		private readonly static Color LARGE_SHIP = Color.Gray;
+		private readonly static Color LARGE_MISS = SwinGame.RGBAColor(1, 147, 220, 255);
+		private readonly static Color LARGE_HIT = SwinGame.RGBAColor(252, 2, 3, 255);
 
-		private static readonly Color MESSAGE_COLOR = SwinGame.RGBAColor(2, 167, 252, 255);
+		private readonly static Color OUTLINE_COLOR = SwinGame.RGBAColor(5, 55, 88, 255);
+		private readonly static Color SHIP_FILL_COLOR = Color.Gray;
+		private readonly static Color SHIP_OUTLINE_COLOR = Color.White;
+		private readonly static Color MESSAGE_COLOR = SwinGame.RGBAColor(2, 167, 252, 255);
+
 		public const int ANIMATION_CELLS = 7;
-
 		public const int FRAMES_PER_CELL = 8;
+
 		/// <summary>
 		/// Determines if the mouse is in a given rectangle.
 		/// </summary>
@@ -63,10 +58,10 @@ namespace Battleship
 			mouse = SwinGame.MousePosition();
 
 			//if the mouse is inline with the button horizontally
-			if (mouse.X >= x & mouse.X <= x + w)
+			if (mouse.X >= x && mouse.X <= x + w)
 			{
 				//Check vertical position
-				if (mouse.Y >= y & mouse.Y <= y + h)
+				if (mouse.Y >= y && mouse.Y <= y + h)
 				{
 					result = true;
 				}
@@ -83,8 +78,7 @@ namespace Battleship
 		/// <param name="showShips">indicates if the ships should be shown</param>
 		public static void DrawField(ISeaGrid grid, Player thePlayer, bool showShips)
 		{
-			DrawCustomField(grid, thePlayer, false, showShips, FIELD_LEFT, FIELD_TOP, FIELD_WIDTH, FIELD_HEIGHT, CELL_WIDTH, CELL_HEIGHT,
-			CELL_GAP);
+			DrawCustomField(grid, thePlayer, false, showShips, FIELD_LEFT, FIELD_TOP, FIELD_WIDTH, FIELD_HEIGHT, CELL_WIDTH, CELL_HEIGHT, CELL_GAP);
 		}
 
 		/// <summary>
@@ -102,8 +96,7 @@ namespace Battleship
 			const int SMALL_FIELD_CELL_HEIGHT = 13;
 			const int SMALL_FIELD_CELL_GAP = 4;
 
-			DrawCustomField(grid, thePlayer, true, true, SMALL_FIELD_LEFT, SMALL_FIELD_TOP, SMALL_FIELD_WIDTH, SMALL_FIELD_HEIGHT, SMALL_FIELD_CELL_WIDTH, SMALL_FIELD_CELL_HEIGHT,
-			SMALL_FIELD_CELL_GAP);
+			DrawCustomField(grid, thePlayer, true, true, SMALL_FIELD_LEFT, SMALL_FIELD_TOP, SMALL_FIELD_WIDTH, SMALL_FIELD_HEIGHT, SMALL_FIELD_CELL_WIDTH, SMALL_FIELD_CELL_HEIGHT, SMALL_FIELD_CELL_GAP);
 		}
 
 		/// <summary>
@@ -120,8 +113,7 @@ namespace Battleship
 		/// <param name="cellWidth">the width of each cell</param>
 		/// <param name="cellHeight">the height of each cell</param>
 		/// <param name="cellGap">the gap between the cells</param>
-		private static void DrawCustomField(ISeaGrid grid, Player thePlayer, bool small, bool showShips, int left, int top, int width, int height, int cellWidth, int cellHeight,
-		int cellGap)
+		private static void DrawCustomField(ISeaGrid grid, Player thePlayer, bool small, bool showShips, int left, int top, int width, int height, int cellWidth, int cellHeight, int cellGap)
 		{
 			//SwinGame.FillRectangle(Color.Blue, left, top, width, height)
 
@@ -142,11 +134,8 @@ namespace Battleship
 
 					draw = true;
 
-					switch (grid[row, col])
+					switch (grid.Item(row, col))
 					{
-						//case TileView.Ship:
-						//	draw = false;
-						//	break;
 						//If small Then fillColor = _SMALL_SHIP Else fillColor = _LARGE_SHIP
 						case TileView.Miss:
 							if (small)
@@ -168,6 +157,8 @@ namespace Battleship
 								draw = false;
 							break;
 					}
+
+
 
 					if (draw)
 					{
@@ -192,18 +183,21 @@ namespace Battleship
 			//Draw the ships
 			foreach (Ship s in thePlayer)
 			{
+				//if (ReferenceEquals(s, null) || !s.IsDeployed)
 				if (s == null || !s.IsDeployed)
 					continue;
+
+
 				rowTop = top + (cellGap + cellHeight) * s.Row + SHIP_GAP;
 				colLeft = left + (cellGap + cellWidth) * s.Column + SHIP_GAP;
 
-				if (s.Direction == Direction.LeftRight)
+				if (s.Direction == Direction.Left|| s.Direction == Direction.Right)
 				{
 					shipName = "ShipLR" + s.Size;
 					shipHeight = cellHeight - (SHIP_GAP * 2);
 					shipWidth = (cellWidth + cellGap) * s.Size - (SHIP_GAP * 2) - cellGap;
 				}
-				else
+				else if(s.Direction == Direction.Up || s.Direction == Direction.Down)
 				{
 					//Up down
 					shipName = "ShipUD" + s.Size;
@@ -223,8 +217,8 @@ namespace Battleship
 			}
 		}
 
-
 		private static string _message;
+
 		/// <summary>
 		/// The message to display
 		/// </summary>
@@ -232,8 +226,14 @@ namespace Battleship
 		/// <returns>The message to display</returns>
 		public static string Message
 		{
-			get { return _message; }
-			set { _message = value; }
+			get
+			{
+				return _message;
+			}
+			set
+			{
+				_message = value;
+			}
 		}
 
 		/// <summary>
@@ -247,7 +247,6 @@ namespace Battleship
 		/// <summary>
 		/// Draws the background for the current state of the game
 		/// </summary>
-
 		public static void DrawBackground()
 		{
 			switch (GameController.CurrentState)
@@ -257,6 +256,9 @@ namespace Battleship
 				case GameState.AlteringSettings:
 				case GameState.ViewingHighScores:
 					SwinGame.DrawBitmap(GameResources.GameImage("Menu"), 0, 0);
+					break;
+				case GameState.Help:
+					SwinGame.DrawBitmap(GameResources.GameImage("Help"), 0, 0);
 					break;
 				case GameState.Discovering:
 				case GameState.EndingGame:
@@ -269,6 +271,7 @@ namespace Battleship
 					SwinGame.ClearScreen();
 					break;
 			}
+
 
 			SwinGame.DrawFramerate(675, 585, GameResources.GameFont("CourierSmall"));
 		}
@@ -283,8 +286,8 @@ namespace Battleship
 			AddAnimation(row, col, "Splash");
 		}
 
-
 		private static List<Sprite> _Animations = new List<Sprite>();
+
 		private static void AddAnimation(int row, int col, string image)
 		{
 			Sprite s = default(Sprite);
@@ -341,4 +344,5 @@ namespace Battleship
 			}
 		}
 	}
+
 }

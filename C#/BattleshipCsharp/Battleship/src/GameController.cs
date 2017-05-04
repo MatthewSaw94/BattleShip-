@@ -11,7 +11,7 @@ namespace Battleship
 {
     public sealed class GameController
     {
-
+		private static float _volume = 1f;
         private static BattleShipsGame _theGame;
         private static Player _human;
         private static AIPlayer _ai;
@@ -205,6 +205,7 @@ namespace Battleship
                 else
                 {
                     Audio.PlaySoundEffect(GameResources.GameSound("Winner"));
+
                 }
             }
             else if (result.Value == ResultOfAttack.Hit)
@@ -416,5 +417,21 @@ namespace Battleship
             _aiSetting = setting;
         }
 
+		/// <summary>
+		/// Turn audio on/off.
+		/// </summary>
+		public static void SwitchAudio()
+		{
+			if (SwinGame.MusicVolume() > 0)
+			{
+				SwinGame.SetMusicVolume(0f);
+				_volume = 0f;
+			}
+			else
+			{
+				SwinGame.SetMusicVolume(1f);
+				_volume = 1f;
+			}
+		 }
     }
 }

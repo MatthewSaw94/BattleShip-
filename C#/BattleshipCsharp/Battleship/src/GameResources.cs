@@ -15,7 +15,8 @@ namespace Battleship
             NewFont("ArialLarge", "arial.ttf", 80);
             NewFont("Courier", "cour.ttf", 14);
             NewFont("CourierSmall", "cour.ttf", 8);
-            NewFont("Menu", "ffaccess.ttf", 14);
+            NewFont("Menu", "ffaccess.ttf", 10);
+            NewFont("HighScore", "ffaccess.ttf", 22);
         }
 
         private static void LoadImages()
@@ -24,13 +25,26 @@ namespace Battleship
             NewImage("Menu", "main_page.jpg");
             NewImage("Discovery", "discover.jpg");
             NewImage("Deploy", "deploy.jpg");
+            NewImage("Help", "help_page.jpg");
 
-            //Deployment
-            NewImage("LeftRightButton", "deploy_dir_button_horiz.png");
-            NewImage("UpDownButton", "deploy_dir_button_vert.png");
+            //Deployment            
+            //NewImage("LeftButton", "deploy_left_button_horiz.png");
+            //NewImage("RightButton", "deploy_right_button_horiz.png");
+            //NewImage("UpButton", "deploy_up_button_vert.png");
+            //NewImage("DownButton", "deploy_down_button_vert.png");
+
+
+            NewImage("DownButton", "Actions-go-down-icon.png");
+            NewImage("RightButton", "Actions-go-next-icon.png");
+            NewImage("UpButton", "Actions-go-up-icon.png");
+            NewImage("LeftButton", "Actions-go-previous-icon.png");
+
             NewImage("SelectedShip", "deploy_button_hl.png");
             NewImage("PlayButton", "deploy_play_button.png");
             NewImage("RandomButton", "deploy_randomize_button.png");
+            NewImage("MuteButton", "Mute_Button.png");
+            NewImage("SoundButton", "Sound_Button.png");
+			NewImage("MenuButton", "hb_button2.png");
 
             //Ships
             int i = 0;
