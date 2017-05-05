@@ -420,18 +420,6 @@ namespace Battleship
 		/// <summary>
 		/// Turn audio on/off.
 		/// </summary>
-		public static void SwitchAudio()
-		{
-			if (SwinGame.MusicVolume() > 0)
-			{
-				SwinGame.SetMusicVolume(0f);
-				_volume = 0f;
-			}
-			else
-			{
-				SwinGame.SetMusicVolume(1f);
-				_volume = 1f;
-			}
-		 }
+
     }
 }
