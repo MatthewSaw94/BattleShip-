@@ -54,17 +54,17 @@ namespace Battleship
                 if (UtilityFunctions.IsMouseInRectangle(MUTE_BUTTON_LEFT, MUTE_BUTTON_TOP, MUTE_BUTTON_WIDTH, MUTW_BUTTON_HEIGHT) && (Sound == true))
                 {
                     SwinGame.StopMusic();
-                    SwinGame.DrawBitmap(GameResources.GameImage("MuteButton"), MUTE_BUTTON_LEFT, MUTE_BUTTON_TOP);
+                    SwinGame.DrawText("AUDIO OFF", Color.White, MUTE_BUTTON_LEFT, MUTE_BUTTON_TOP);
                     Sound = false;
                 }
                 else if (UtilityFunctions.IsMouseInRectangle(MUTE_BUTTON_LEFT, MUTE_BUTTON_TOP, MUTE_BUTTON_WIDTH, MUTW_BUTTON_HEIGHT) && (Sound == false))
                 {
                     SwinGame.PlayMusic(GameResources.GameMusic("Background"));
-                    SwinGame.DrawBitmap(GameResources.GameImage("SoundButton"), MUTE_BUTTON_LEFT, MUTE_BUTTON_TOP);
+                    SwinGame.DrawText("AUDIO ON", Color.Grey, MUTE_BUTTON_LEFT, MUTE_BUTTON_TOP);
                     Sound = true;
                 }
             }
-            
+
         }
 
         /// <summary>
@@ -116,17 +116,17 @@ namespace Battleship
             SwinGame.DrawText(GameController.HumanPlayer.Shots.ToString(), Color.White, GameResources.GameFont("Menu"), SCORES_LEFT, SHOTS_TOP);
             SwinGame.DrawText(GameController.HumanPlayer.Hits.ToString(), Color.White, GameResources.GameFont("Menu"), SCORES_LEFT, HITS_TOP);
             SwinGame.DrawText(GameController.HumanPlayer.Missed.ToString(), Color.White, GameResources.GameFont("Menu"), SCORES_LEFT, SPLASH_TOP);
-			SwinGame.DrawBitmap(GameResources.GameImage("MenuButton"), MENU_LEFT, MENU_TOP);
-            
-			if (Sound == true)
-            {
-                SwinGame.DrawBitmap(GameResources.GameImage("SoundButton"), MUTE_BUTTON_LEFT, MUTE_BUTTON_TOP);
-            }
-            if(Sound == false)
-            {
-                SwinGame.DrawBitmap(GameResources.GameImage("MuteButton"), MUTE_BUTTON_LEFT, MUTE_BUTTON_TOP);
-            }
+            //SwinGame.DrawBitmap(GameResources.GameImage("MenuButton"), MENU_LEFT, MENU_TOP);
 
+            if (Sound == true)
+            {
+                SwinGame.DrawText("AUDIO ON", Color.White, MUTE_BUTTON_LEFT, MUTE_BUTTON_TOP);
+            }
+            if (Sound == false)
+            {
+
+                SwinGame.DrawText("AUDIO OFF", Color.Grey, MUTE_BUTTON_LEFT, MUTE_BUTTON_TOP);
+            }
         }
 
     }

@@ -75,7 +75,7 @@ namespace Battleship
         private const int MUTE_BUTTON_LEFT = 690;
         private const int MUTE_BUTTON_WIDTH = 40;
        
-private static readonly Color FADE_COLOR = SwinGame.RGBAColor(105, 105, 102, 255);
+        private static readonly Color FADE_COLOR = SwinGame.RGBAColor(105, 105, 102, 255);
         private readonly static Color MENU_COLOR = SwinGame.RGBAColor(2, 167, 252, 255);
         private readonly static Color HIGHLIGHT_COLOR = SwinGame.RGBAColor(1, 57, 86, 255);
         
@@ -306,10 +306,10 @@ private static readonly Color FADE_COLOR = SwinGame.RGBAColor(105, 105, 102, 255
 				case MAIN_MENU_FULLSCREEN_BUTTON:
 					SwinGame.ToggleFullScreen();
 					break;
-				case MAIN_MENU_AUDIO_BUTTON:
-					GameController.SwitchAudio();
-					break;
-				case MAIN_MENU_QUIT_BUTTON:
+                //case MAIN_MENU_AUDIO_BUTTON:
+                //    GameController.SwitchAudio();
+                //    break;
+                case MAIN_MENU_QUIT_BUTTON:
 					GameController.EndCurrentState();
 					break;
             }
