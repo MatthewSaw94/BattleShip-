@@ -11,7 +11,7 @@ namespace Battleship
 {
     public sealed class GameController
     {
-		private static float _volume = 1f;
+		//private static float _volume;
         private static BattleShipsGame _theGame;
         private static Player _human;
         private static AIPlayer _ai;

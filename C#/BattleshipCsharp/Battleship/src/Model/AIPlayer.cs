@@ -83,7 +83,29 @@ namespace Battleship
             {
                 return ReferenceEquals(@this, null) || ReferenceEquals(other, null) || @this.Row != other.Row || @this.Column != other.Column;
             }
-        }
+
+			public static bool Equals(Location @this, Location other)
+			{
+				return ReferenceEquals(@this, null) || ReferenceEquals(other, null) || @this.Row.Equals(other.Row) || @this.Column.Equals(other.Column);
+			}
+
+			public override bool Equals(object obj)
+			{
+				if (ReferenceEquals(null, obj))
+					return false;
+				if (ReferenceEquals(this, obj))
+					return false;
+				if (obj.GetType() != this.GetType())
+					return false;
+				
+				return object.ReferenceEquals(this, obj);
+			}
+
+			public override int GetHashCode()
+			{
+				return base.GetHashCode();
+			}
+		}
 
 
         public AIPlayer(BattleShipsGame game) : base(game)

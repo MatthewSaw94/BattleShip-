@@ -32,10 +32,6 @@
     <RunWithWarnings>true</RunWithWarnings>
     <AssemblyName>
     </AssemblyName>
-    <SignAssembly>false</SignAssembly>
-    <DelaySign>false</DelaySign>
-    <AssemblyOriginatorKeyFile>
-    </AssemblyOriginatorKeyFile>
     <NoWarn>
     </NoWarn>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>

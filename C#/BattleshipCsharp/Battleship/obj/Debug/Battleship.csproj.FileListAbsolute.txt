@@ -44,3 +44,11 @@ D:\Github\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\Battleship.pdb
 D:\Github\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\nunit.framework.dll
 D:\Github\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\nunit.framework.xml
 D:\Github\BattleShip-\C#\BattleshipCsharp\Battleship\obj\Debug\Battleship.csprojResolveAssemblyReference.cache
+D:\Development Project 1\Battleship - Master 12-5-17\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\Battleship.exe.config
+D:\Development Project 1\Battleship - Master 12-5-17\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\Battleship.exe
+D:\Development Project 1\Battleship - Master 12-5-17\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\Battleship.pdb
+D:\Development Project 1\Battleship - Master 12-5-17\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\nunit.framework.dll
+D:\Development Project 1\Battleship - Master 12-5-17\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\nunit.framework.xml
+D:\Development Project 1\Battleship - Master 12-5-17\BattleShip-\C#\BattleshipCsharp\Battleship\obj\Debug\Battleship.csprojResolveAssemblyReference.cache
+D:\Development Project 1\Battleship - Master 12-5-17\BattleShip-\C#\BattleshipCsharp\Battleship\obj\Debug\Battleship.exe
+D:\Development Project 1\Battleship - Master 12-5-17\BattleShip-\C#\BattleshipCsharp\Battleship\obj\Debug\Battleship.pdb
