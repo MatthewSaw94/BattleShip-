@@ -36,3 +36,11 @@ E:\NCHS\2ND YEAR\SEM_1\DT&P\BattleShip_Project\BattleShip-\C#\BattleshipCsharp\B
 E:\NCHS\2ND YEAR\SEM_1\DT&P\BattleShip_Project\BattleShip-\C#\BattleshipCsharp\Battleship\obj\Debug\Battleship.pdb
 E:\NCHS\2ND YEAR\SEM_1\DT&P\BattleShip_Project\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\nunit.framework.dll
 E:\NCHS\2ND YEAR\SEM_1\DT&P\BattleShip_Project\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\nunit.framework.xml
+D:\Github\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\Battleship.exe.config
+D:\Github\BattleShip-\C#\BattleshipCsharp\Battleship\obj\Debug\Battleship.exe
+D:\Github\BattleShip-\C#\BattleshipCsharp\Battleship\obj\Debug\Battleship.pdb
+D:\Github\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\Battleship.exe
+D:\Github\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\Battleship.pdb
+D:\Github\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\nunit.framework.dll
+D:\Github\BattleShip-\C#\BattleshipCsharp\Battleship\bin\Debug\nunit.framework.xml
+D:\Github\BattleShip-\C#\BattleshipCsharp\Battleship\obj\Debug\Battleship.csprojResolveAssemblyReference.cache

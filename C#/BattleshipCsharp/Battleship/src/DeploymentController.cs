@@ -130,7 +130,6 @@ namespace Battleship
                 else if (UtilityFunctions.IsMouseInRectangle(MUTE_BUTTON_LEFT, MUTE_BUTTON_TOP, MUTE_BUTTON_WIDTH, MUTW_BUTTON_HEIGHT) && (Sound == true))
                 {
                     SwinGame.StopMusic();
-                    //SwinGame.DrawBitmap(GameResources.GameImage("MuteButton"), MUTE_BUTTON_LEFT, MUTE_BUTTON_TOP);
                     SwinGame.DrawText("AUDIO ON", Color.Grey, MUTE_BUTTON_LEFT, MUTE_BUTTON_TOP);
                     Sound = false;
                 }
@@ -165,8 +164,8 @@ namespace Battleship
             //Calculate the row/col clicked
             int row = 0;
             int col = 0;
-           // row = System.Convert.ToInt32(Convert.ToInt32(Math.Floor((mouse.Y) / (UtilityFunctions.CELL_HEIGHT + UtilityFunctions.CELL_GAP))));
-           row= System.Convert.ToInt32(Convert.ToInt32(Math.Floor(System.Convert.ToDouble(mouse.Y - UtilityFunctions.FIELD_TOP) / System.Convert.ToDouble(UtilityFunctions.CELL_WIDTH + UtilityFunctions.CELL_GAP))));
+           
+            row= System.Convert.ToInt32(Convert.ToInt32(Math.Floor(System.Convert.ToDouble(mouse.Y - UtilityFunctions.FIELD_TOP) / System.Convert.ToDouble(UtilityFunctions.CELL_WIDTH + UtilityFunctions.CELL_GAP))));
             col = System.Convert.ToInt32(Convert.ToInt32(Math.Floor(System.Convert.ToDouble(mouse.X - UtilityFunctions.FIELD_LEFT) / System.Convert.ToDouble(UtilityFunctions.CELL_WIDTH + UtilityFunctions.CELL_GAP))));
 
          
@@ -206,32 +205,23 @@ namespace Battleship
             {
                 SwinGame.DrawRectangleOnScreen(Color.Yellow, LEFT_BUTTON_LEFT, TOP_BUTTONS_TOP, DIR_BUTTONS_WIDTH, TOP_BUTTONS_HEIGHT);
                 //SwinGame.DrawBitmap(GameResources.GameImage("LeftButton"), LEFT_BUTTON_LEFT, TOP_BUTTONS_TOP);
-                //SwinGame.DrawText("U/D", Color.Gray, GameResources.GameFont("Menu"), UP_DOWN_BUTTON_LEFT, TOP_BUTTONS_TOP)
-                //SwinGame.DrawText("L/R", Color.White, GameResources.GameFont("Menu"), LEFT_RIGHT_BUTTON_LEFT, TOP_BUTTONS_TOP)
             }
             else if (_currentDirection == Direction.Right)
             {
                 SwinGame.DrawRectangleOnScreen(Color.Yellow, RIGHT_BUTTON_LEFT, TOP_BUTTONS_TOP, DIR_BUTTONS_WIDTH, TOP_BUTTONS_HEIGHT);
                 //SwinGame.DrawBitmap(GameResources.GameImage("RightButton"), LEFT_BUTTON_LEFT, TOP_BUTTONS_TOP);
-
-                //SwinGame.DrawText("U/D", Color.Gray, GameResources.GameFont("Menu"), UP_DOWN_BUTTON_LEFT, TOP_BUTTONS_TOP)
-                //SwinGame.DrawText("L/R", Color.White, GameResources.GameFont("Menu"), LEFT_RIGHT_BUTTON_LEFT, TOP_BUTTONS_TOP)
             }
             else if(_currentDirection == Direction.Up)
             {
                 SwinGame.DrawRectangleOnScreen(Color.Yellow, UP_BUTTON_LEFT, TOP_BUTTONS_TOP, DIR_BUTTONS_WIDTH, TOP_BUTTONS_HEIGHT);
                 // SwinGame.DrawBitmap(GameResources.GameImage("UpButton"), LEFT_BUTTON_LEFT, TOP_BUTTONS_TOP);
 
-                //SwinGame.DrawText("U/D", Color.White, GameResources.GameFont("Menu"), UP_DOWN_BUTTON_LEFT, TOP_BUTTONS_TOP)
-                //SwinGame.DrawText("L/R", Color.Gray, GameResources.GameFont("Menu"), LEFT_RIGHT_BUTTON_LEFT, TOP_BUTTONS_TOP)
             }
              else if(_currentDirection==Direction.Down)
             {
                 SwinGame.DrawRectangleOnScreen(Color.Yellow, DOWN_BUTTON_LEFT, TOP_BUTTONS_TOP, DIR_BUTTONS_WIDTH, TOP_BUTTONS_HEIGHT);
 
                 // SwinGame.DrawBitmap(GameResources.GameImage("DownButton"), LEFT_BUTTON_LEFT, TOP_BUTTONS_TOP);
-                //SwinGame.DrawText("U/D", Color.White, GameResources.GameFont("Menu"), UP_DOWN_BUTTON_LEFT, TOP_BUTTONS_TOP)
-                //SwinGame.DrawText("L/R", Color.Gray, GameResources.GameFont("Menu"), LEFT_RIGHT_BUTTON_LEFT, TOP_BUTTONS_TOP)
             }
 
             //DrawShips
