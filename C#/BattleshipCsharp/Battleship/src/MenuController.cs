@@ -185,7 +185,7 @@ namespace Battleship
             //SwinGame.DrawText("Settings", Color.White, GameFont("ArialLarge"), 50, 50)
 
             DrawButtons(MAIN_MENU);
-            DrawButtons(SETUP_MENU, 1, 1);
+            DrawButtons(SETUP_MENU, 1, 1, and INT(AISetting));
         }
 
         /// <summary>
@@ -324,10 +324,10 @@ namespace Battleship
             switch (button)
             {
                 case SETUP_MENU_EASY_BUTTON:
-                    GameController.SetDifficulty(AIOption.Hard);
+                    GameController.SetDifficulty(AIOption.Easy);
                     break;
                 case SETUP_MENU_MEDIUM_BUTTON:
-                    GameController.SetDifficulty(AIOption.Hard);
+                    GameController.SetDifficulty(AIOption.Medium);
                     break;
                 case SETUP_MENU_HARD_BUTTON:
                     GameController.SetDifficulty(AIOption.Hard);
