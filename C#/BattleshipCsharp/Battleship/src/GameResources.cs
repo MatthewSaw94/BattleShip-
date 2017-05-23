@@ -25,6 +25,7 @@ namespace Battleship
             NewImage("Menu", "main_page.jpg");
             NewImage("Discovery", "discover.jpg");
             NewImage("Deploy", "deploy.jpg");
+            NewImage("Help", "help_page.jpg");
             
 
             //Deployment            
