@@ -26,8 +26,8 @@ namespace Battleship
 				"SCORES",
 				"QUIT",
 
-				"FULLSCREEN",
-				"AUDIO"},
+				"AUDIO",
+				"FULLSCREEN"},
 			
         new string[] {
 				"RETURN",
