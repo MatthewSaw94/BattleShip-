@@ -27,7 +27,7 @@ namespace Battleship
 				"QUIT",
 
 				"AUDIO",
-				"FULLSCREEN"},
+				},
 			
         new string[] {
 				"RETURN",
@@ -58,8 +58,8 @@ namespace Battleship
         private const int MAIN_MENU_TOP_SCORES_BUTTON = 2;
       	private const int MAIN_MENU_QUIT_BUTTON = 3;
 		private const int MAIN_MENU_HELP_BUTTON = 4;
-		private const int MAIN_MENU_FULLSCREEN_BUTTON = 5;
-		private const int MAIN_MENU_AUDIO_BUTTON = 6;
+        private const int MAIN_MENU_FULLSCREEN_BUTTON = 5;
+        private const int MAIN_MENU_AUDIO_BUTTON = 6;
 
         private const int SETUP_MENU_EASY_BUTTON = 0;
         private const int SETUP_MENU_MEDIUM_BUTTON = 1;
@@ -303,9 +303,9 @@ namespace Battleship
 				case MAIN_MENU_HELP_BUTTON:
 					GameController.AddNewState(GameState.Help);
 					break;
-				case MAIN_MENU_FULLSCREEN_BUTTON:
-					SwinGame.ToggleFullScreen();
-					break;
+                case MAIN_MENU_FULLSCREEN_BUTTON:
+                    SwinGame.ToggleFullScreen();
+                    break;
                 //case MAIN_MENU_AUDIO_BUTTON:
                 //    GameController.SwitchAudio();
                 //    break;
